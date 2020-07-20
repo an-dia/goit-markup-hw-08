@@ -1,0 +1,18 @@
+.page-header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+
+  background-color: $primary-bg-color;
+}
+
+.page-header-nav {
+  display: flex;
+}
+
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}

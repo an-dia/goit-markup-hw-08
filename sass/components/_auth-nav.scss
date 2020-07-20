@@ -1,0 +1,46 @@
+.auth-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  &-item + &-item {
+    margin-left: 30px;
+  }
+}
+
+.auth-nav-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-text-color;
+
+  text-decoration: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  transition: color $timing-function-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
+}

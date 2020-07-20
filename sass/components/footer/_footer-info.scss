@@ -1,0 +1,35 @@
+// Контейнер 1
+.footer-info {
+  margin-right: 69px;
+}
+
+.footer-logo {
+  @extend .logo;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-info-link {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.map {
+  color: #ffffff;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.mail-link {
+  margin-bottom: 9px;
+}

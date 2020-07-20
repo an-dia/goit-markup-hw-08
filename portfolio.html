@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="page-header header-portfolio">
+      <div class="conteiner page-header-nav">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo" lang="en"
+            >Web <span class="logo-primary">Studio</span></a
+          >
+          <ul class="site-nav">
+            <li class="site-nav-item">
+              <a href="./index.html" class="site-nav-link">Студия</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="" class="site-nav-link current">Портфолио</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="" class="site-nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="auth-nav">
+          <a
+            href="mailto:info@devstudio.com"
+            class="auth-nav-link auth-nav-item"
+          >
+            <svg class="icon-mail">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="auth-nav-link auth-nav-item">
+            <svg class="icon-phone">
+              <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </address>
+      </div>
+    </header>
+    <!--Filter-->
+    <main>
+      <section class="section">
+        <div class="conteiner">
+          <h1 class="visually-hidden">Наши работы</h1>
+          <div role="radio-group">
+            <ul class="filter">
+              <li class="filter-item">
+                <label class="filter-label">
+                  <input
+                    class="filter-input"
+                    type="radio"
+                    name="radio-btn"
+                    value="radio-btn"
+                  />
+                  <span class="filter-text">Всё</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-label">
+                  <input
+                    class="filter-input"
+                    type="radio"
+                    name="radio-btn"
+                    value="radio-btn"
+                  />
+                  <span class="filter-text">Веб-сайты</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-label">
+                  <input
+                    class="filter-input"
+                    type="radio"
+                    name="radio-btn"
+                    value="radio-btn"
+                  />
+                  <span class="filter-text">Приложения</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-label">
+                  <input
+                    class="filter-input"
+                    type="radio"
+                    name="radio-btn"
+                    value="radio-btn"
+                  />
+                  <span class="filter-text">Дизайн</span>
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-label">
+                  <input
+                    class="filter-input"
+                    type="radio"
+                    name="radio-btn"
+                    value="radio-btn"
+                  />
+                  <span class="filter-text">Маркетинг</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- Наши работы -->
+          <ul class="portfolio">
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/tehnokriak.jpg"
+                    alt="ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title">Технокряк</h2>
+                  <p class="card-content-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/poster.jpg"
+                    alt="Постер"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="card-content-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/seafood.jpg"
+                    alt="рыба"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="card-content-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/project-prime.jpg"
+                    alt="наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="card-content-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/project-boxes.jpg"
+                    alt="коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="card-content-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/designer-groves.jpg"
+                    alt="экран"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="card-content-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/limited-edition.jpg"
+                    alt="журнал"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="card-content-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/progect-lab.jpg"
+                    alt="ярлык"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="card-content-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="" class="portfolio-link">
+                <div class="card-img-conteiner">
+                  <img
+                    class="card-img"
+                    src="./images/growing-business.jpg"
+                    alt="ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-img-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores officiis magni perferendis voluptate nulla quod,
+                    at rerum minus dignissimos.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="card-content-title" lang="en">Growing Business</h2>
+                  <p class="card-content-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Подвал портфолио-->
+    <footer class="footer">
+      <div class="footer-conteiner">
+        <div class="flex-footer">
+          <!-- Первый контейнер -->
+          <div class="footer-info">
+            <a href="./index.html" class="footer-logo" lang="en"
+              >Web <span class="logo-secondary">Studio</span>
+            </a>
+            <address class="address">
+              <a class="footer-info-link map" href="./index.html"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <a
+                class="footer-info-link mail-link"
+                href="mailto:info@example.com"
+                >info@example.com</a
+              >
+              <a href="tel:+380991111111" class="footer-info-link"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+          <!-- Второй контейнер -->
+          <div class="join-in">
+            <b class="footer-caption">Присоединяйтесь</b>
+            <ul class="social-network">
+              <li class="join-in-item">
+                <a
+                  href=""
+                  class="social-network-footer"
+                  aria-label="ссылка на instagram"
+                >
+                  <svg class="icon-social-footer">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-in-item">
+                <a
+                  href=""
+                  class="social-network-footer"
+                  aria-label="ссылка на twitter"
+                >
+                  <svg class="icon-social-footer">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-in-item">
+                <a
+                  href=""
+                  class="social-network-footer"
+                  aria-label="ссылка на facebook"
+                >
+                  <svg class="icon-social-footer">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-in-item">
+                <a
+                  href=""
+                  class="social-network-footer"
+                  aria-label="ссылка на linkedin"
+                >
+                  <svg class="icon-social-footer">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Третий контейнер -->
+          <div class="join">
+            <b class="footer-caption">Подпишитесь на рассылку</b>
+            <!-- <div class="join-conteiner"> -->
+            <form class="join-form">
+              <label>
+                <input
+                  class="join-form-input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="join-button">
+                Подписаться
+                <svg class="icon-plane">
+                  <use href="./images/sprite.svg#icon-plane"></use>
+                </svg>
+              </button>
+            </form>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector('.page-header')
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.social-network {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-network-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $primari-social-network-color;
+  text-decoration: none;
+
+  transition: $timing-function-bezier;
+  transition-property: color, background-color;
+
+  &:hover,
+  &:focus {
+    color: $white-text-color;
+    background-color: $accent-color;
+  }
+}
+
+.icon-social-network {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

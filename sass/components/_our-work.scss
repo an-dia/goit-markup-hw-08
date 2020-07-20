@@ -1,0 +1,41 @@
+.work-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  position: relative;
+
+  .work-img {
+    @extend %img;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.work-link {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 370px;
+  height: 70px;
+  color: #ffffff;
+  background-color: rgba(35, 35, 37, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:focus {
+    color: $accent-color;
+  }
+}

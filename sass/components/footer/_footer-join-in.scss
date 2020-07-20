@@ -1,0 +1,29 @@
+// Контейнер 2
+.join-in {
+  margin-right: 94px;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-caption {
+  display: block;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.social-network-footer {
+  @extend .social-network-link;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-social-footer {
+  width: 20px;
+  height: 20px;
+  fill: $white-text-color;
+}

@@ -1,0 +1,40 @@
+// Контейнер 3
+.join-form {
+  display: flex;
+  justify-content: center;
+
+  &-input {
+    padding: 15px 16px;
+    min-width: 358px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+.join-button {
+  @extend .submit;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 29px;
+}
+.icon-plane {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: $white-text-color;
+
+  transition: transform $timing-function-bezier;
+
+  .join-button:hover &,
+  .join-button:focus & {
+    transform: translate(25px, -50px) scale(1.2);
+  }
+}
