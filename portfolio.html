@@ -23,6 +23,23 @@
           <a href="./index.html" class="logo" lang="en"
             >Web <span class="logo-primary">Studio</span></a
           >
+          <button type="button" class="menu-button" is-open data-menu-button>
+            <svg
+              class="icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close-md"
+                href="./images/sprite.svg#icon-close-md"
+              ></use>
+              <use
+                class="icon-burger"
+                href="./images/sprite.svg#icon-burger"
+              ></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav-item">
               <a href="./index.html" class="site-nav-link">Студия</a>
@@ -441,5 +458,6 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.icon-close-md {
+  display: none;
+
+  .menu-button.is-open & {
+    display: block;
+  }
+
+  .menu-button:hover &,
+  .menu-button:focus & {
+    fill: $accent-color;
+  }
+}
+
+.icon-burger {
+  .menu-button.is-open & {
+    display: none;
+  }
+  .menu-button:hover &,
+  .menu-button:focus & {
+    fill: $accent-color;
+  }
+}

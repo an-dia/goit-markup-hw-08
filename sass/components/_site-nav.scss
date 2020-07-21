@@ -1,6 +1,9 @@
 .site-nav {
+  display: none;
   @extend %list;
-  display: flex;
+
+  // display: flex;
+
   margin-left: 85px;
 }
 
