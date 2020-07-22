@@ -1,11 +1,22 @@
 .priority {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-upper) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   &-title {
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
     color: $secondary-text-color;
 
     font-weight: 700;
@@ -23,24 +34,42 @@
 }
 
 .priority-item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  @media screen and (min-width: $tablet-upper) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 
-  &:nth-child(4n) {
-    margin-right: 0;
+  @media screen and (min-width: $desctop-upper) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: $tablet-lower) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .priority-icon-conteiner {
   height: 120px;
-  padding: 25px 100px;
+  padding: 25px 190px;
+
   margin-bottom: 30px;
   border-radius: 4px;
 
   background-color: $secondary-bg-color;
-}
 
+  @media screen and (min-width: $tablet-upper) {
+    padding: 25px 142px;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    padding: 25px 100px;
+  }
+}
 .icon-priority {
+  @extend %img;
   width: 70px;
   height: 70px;
 }

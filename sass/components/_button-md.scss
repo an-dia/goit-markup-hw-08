@@ -5,6 +5,14 @@
   border: none;
   background-color: transparent;
   margin-left: auto;
+
+  @media screen and (min-width: $tablet-upper) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    display: none;
+  }
 }
 
 .icon-close-md {

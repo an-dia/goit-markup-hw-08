@@ -1,3 +1,9 @@
+@media screen and (max-width: $desctop-lower) {
+  .our-work {
+    display: none;
+  }
+}
+
 .work-list {
   @extend %list;
   display: flex;

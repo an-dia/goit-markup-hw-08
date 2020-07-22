@@ -1,6 +1,11 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop-upper) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -9,11 +14,21 @@
   color: $secondary-text-color;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.17;
+
   text-align: center;
+
+  @media screen and (min-width: $desctop-upper) {
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .section-no-padding {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop-upper) {
+    padding-bottom: 94px;
+  }
 }

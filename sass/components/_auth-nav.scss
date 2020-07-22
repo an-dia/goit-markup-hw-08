@@ -1,11 +1,25 @@
 .auth-nav {
-  display: none;
-  // display: flex;
+  display: inline-flex;
   align-items: center;
   margin-left: auto;
 
+  @media screen and (max-width: $tablet-lower) {
+    display: none;
+  }
+
+  @media screen and (max-width: $desctop-lower) {
+    flex-direction: column;
+  }
   &-item + &-item {
-    margin-left: 30px;
+    @media screen and (min-width: $desctop-upper) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.auth-nav-item:not(:last-child) {
+  @media screen and (max-width: $tablet-lower) {
+    margin-bottom: 10px;
   }
 }
 
@@ -20,8 +34,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
+
   letter-spacing: 0.02em;
 
   transition: color $timing-function-bezier;
@@ -30,18 +43,44 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet-upper) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    font-size: 14px;
+    line-height: 1.15;
+  }
 }
 
 .icon-mail {
-  width: 16px;
-  height: 11.2px;
-  margin-right: 10px;
+  @media screen and (min-width: $desctop-upper) {
+    width: 16px;
+    height: 11.2px;
+    margin-right: 10px;
+  }
   fill: currentColor;
+
+  @media screen and (min-width: $tablet-upper) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
 }
 
 .icon-phone {
-  width: 10px;
-  height: 15px;
-  margin-right: 10px;
+  @media screen and (min-width: $desctop-upper) {
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+  }
   fill: currentColor;
+
+  @media screen and (min-width: $tablet-upper) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
 }

@@ -10,9 +10,13 @@
   background-color: $primary-bg-color;
 }
 
-// .page-header-nav {
-//   display: flex;
-// }
+@media screen and (min-width: $tablet-upper) {
+  .page-header-nav {
+    display: flex;
+
+    align-items: center;
+  }
+}
 
 .header-portfolio {
   border-bottom: 1px solid #ececec;
