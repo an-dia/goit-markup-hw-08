@@ -5,6 +5,7 @@
 @import './components/common/body';
 @import './components/common/conteiner';
 @import './components/button-md';
+@import './components/menu';
 @import './components/page-header';
 @import './components/navigation';
 @import './components/logo';
@@ -14,8 +15,8 @@
 @import './components/section';
 // @import './components/filter-portfolio';
 // @import './components/portfolio';
-// @import './components/social-network';
-// @import './components/footer/footer';
-// @import './components/footer/footer-info';
-// @import './components/footer/footer-join-in';
-// @import './components/footer/footer-join';
+@import './components/social-network';
+@import './components/footer/footer';
+@import './components/footer/footer-info';
+@import './components/footer/footer-join-in';
+@import './components/footer/footer-join';

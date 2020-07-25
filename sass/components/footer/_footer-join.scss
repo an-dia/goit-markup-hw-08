@@ -1,11 +1,20 @@
 // Контейнер 3
+.join {
+  text-align: center;
+}
+
 .join-form {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  &-label {
+    display: block;
+    margin-bottom: 20px;
+  }
 
   &-input {
     padding: 15px 16px;
-    min-width: 358px;
+    width: 100%;
+    // width: 358px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -22,7 +31,7 @@
   @extend .submit;
   display: inline-flex;
   align-items: center;
-  margin-left: 12px;
+  // margin-left: 12px;
   padding: 10px 29px;
 }
 .icon-plane {
@@ -35,6 +44,7 @@
 
   .join-button:hover &,
   .join-button:focus & {
-    transform: translate(25px, -50px) scale(1.2);
+    transform: translatex(70px) scale(1.2);
+    // transform: translate(25px, -50px) scale(1.2);
   }
 }

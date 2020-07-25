@@ -1,4 +1,4 @@
-.site-nav {
+.site-nav, .social-network {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -28,7 +28,7 @@ body {
   font-weight: 400;
 }
 
-.conteiner {
+.conteiner, .footer-conteiner {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -36,19 +36,19 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .conteiner {
+  .conteiner, .footer-conteiner {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .conteiner, .footer-conteiner {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .conteiner, .footer-conteiner {
     width: 1200px;
   }
 }
@@ -98,13 +98,29 @@ body {
   fill: #2196f3;
 }
 
+.menu-conteiner {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.menu-conteiner.is-open {
+  display: block;
+}
+
 .page-header {
+  position: relative;
   z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 60px;
+  min-width: 100%;
   background-color: #ffffff;
 }
 
@@ -130,9 +146,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 60px;
 }
 
-.logo {
+.logo, .footer-logo {
   display: inline-block;
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -142,19 +159,12 @@ body {
   text-decoration: none;
 }
 
-.logo:focus {
+.logo:focus, .footer-logo:focus {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .logo {
+  .logo, .footer-logo {
     font-size: 26px;
     line-height: 1.2;
   }
@@ -253,8 +263,8 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .auth-nav-item:not(:last-child) {
+@media screen and (max-width: 1199px) {
+  .auth-nav:first-child {
     margin-bottom: 10px;
   }
 }
@@ -297,6 +307,10 @@ body {
   }
 }
 
+.auth-nav:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .icon-mail {
   fill: currentColor;
 }
@@ -337,7 +351,7 @@ body {
   }
 }
 
-.submit {
+.submit, .join-button {
   color: #ffffff;
   background-color: #2196f3;
   border-radius: 4px;
@@ -357,7 +371,7 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit:hover, .submit:focus {
+.submit:hover, .join-button:hover, .submit:focus, .join-button:focus {
   background-color: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -400,5 +414,172 @@ body {
   .section-no-padding {
     padding-bottom: 94px;
   }
+}
+
+.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 100%;
+}
+
+.social-network-link, .social-network-footer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  text-decoration: none;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.social-network-link:hover, .social-network-footer:hover, .social-network-link:focus, .social-network-footer:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.icon-social-network {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer {
+  background-color: #2f303a;
+  width: 100%;
+}
+
+.footer-conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-info {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-info-link {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-info-link:focus {
+  color: #2196f3;
+}
+
+.map {
+  color: #ffffff;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.mail-link {
+  margin-bottom: 9px;
+}
+
+.join-in {
+  text-align: center;
+  padding-right: 122px;
+  padding-left: 122px;
+  margin-bottom: 60px;
+}
+
+.join-in-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-caption {
+  display: block;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.social-network-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-social-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.join {
+  text-align: center;
+}
+
+.join-form-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.join-form-input {
+  padding: 15px 16px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.join-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 29px;
+}
+
+.icon-plane {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #ffffff;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-button:hover .icon-plane,
+.join-button:focus .icon-plane {
+  -webkit-transform: translatex(70px) scale(1.2);
+          transform: translatex(70px) scale(1.2);
 }
 /*# sourceMappingURL=portfolio.css.map */

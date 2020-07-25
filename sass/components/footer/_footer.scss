@@ -1,15 +1,17 @@
 .footer {
   background-color: #2f303a;
+  width: 100%;
 }
 
 .footer-conteiner {
   @extend .conteiner;
+
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.flex-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
+// .flex-footer {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+// }

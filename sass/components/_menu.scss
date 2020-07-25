@@ -1,0 +1,16 @@
+.menu-conteiner {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: $primary-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
+}

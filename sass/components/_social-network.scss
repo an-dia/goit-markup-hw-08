@@ -2,8 +2,9 @@
   @extend %list;
   display: flex;
   justify-content: space-between;
+  min-width: 100%;
 }
-
+// .team-content
 .social-network-link {
   display: inline-flex;
   align-items: center;

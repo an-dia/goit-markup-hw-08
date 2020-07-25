@@ -2,22 +2,29 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .customers-item {
-  margin-right: 30px;
-
-  &:nth-child(6n) {
-    margin-right: 0;
-  }
+  width: calc((100% - 15px * 4) / 2);
+  margin: 15px;
 }
+
+// .customers-item {
+//   margin-right: 30px;
+
+//   &:nth-child(6n) {
+//     margin-right: 0;
+//   }
+// }
 
 .customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  width: 100%;
+  // width: 170px;
   height: 90px;
   border: 1px solid $primari-social-network-color;
   border-radius: 4px;

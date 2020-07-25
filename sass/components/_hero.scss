@@ -25,13 +25,17 @@
 }
 
 .hero-conteiner {
-  width: 360px;
+  max-width: 360px;
 
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  // @media screen and (min-width: $tablet-upper) {
+  //   max-width: 360px;
+  // }
+
   @media screen and (min-width: $desctop-upper) {
-    width: 630px;
+    max-width: 630px;
   }
 }
 

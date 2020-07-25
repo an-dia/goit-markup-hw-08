@@ -1,6 +1,7 @@
 .auth-nav {
   display: inline-flex;
   align-items: center;
+
   margin-left: auto;
 
   @media screen and (max-width: $tablet-lower) {
@@ -17,8 +18,8 @@
   }
 }
 
-.auth-nav-item:not(:last-child) {
-  @media screen and (max-width: $tablet-lower) {
+.auth-nav:first-child {
+  @media screen and (max-width: $desctop-lower) {
     margin-bottom: 10px;
   }
 }
@@ -27,6 +28,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
   color: $primary-text-color;
 
   text-decoration: none;
@@ -53,6 +55,10 @@
     font-size: 14px;
     line-height: 1.15;
   }
+}
+
+.auth-nav:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .icon-mail {

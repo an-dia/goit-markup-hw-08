@@ -1,10 +1,11 @@
 .page-header {
+  position: relative;
   z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 60px;
+  min-width: 100%;
+
   // min-height: 80px;
 
   background-color: $primary-bg-color;
@@ -13,7 +14,6 @@
 @media screen and (min-width: $tablet-upper) {
   .page-header-nav {
     display: flex;
-
     align-items: center;
   }
 }
