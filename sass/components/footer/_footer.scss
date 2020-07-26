@@ -10,8 +10,18 @@
   padding-bottom: 60px;
 }
 
-// .flex-footer {
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: space-between;
-// }
+.flex-footer-tablet {
+  @media screen and (min-width: $tablet-upper) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.flex-footer {
+  @media screen and (min-width: $desctop-upper) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}

@@ -4,9 +4,9 @@
 
   margin-left: auto;
 
-  @media screen and (max-width: $tablet-lower) {
-    display: none;
-  }
+  // @media screen and (max-width: $tablet-lower) {
+  //   display: none;
+  // }
 
   @media screen and (max-width: $desctop-lower) {
     flex-direction: column;

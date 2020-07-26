@@ -1,10 +1,16 @@
 .social-network {
   @extend %list;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  // justify-content: space-between;
   min-width: 100%;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 // .team-content
+
 .social-network-link {
   display: inline-flex;
   align-items: center;

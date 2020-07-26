@@ -1,9 +1,19 @@
 // Контейнер 1
 .footer-info {
-  // margin-right: 69px;
-
   margin-bottom: 60px;
-  text-align: center;
+
+  @media screen and (max-width: $desctop-lower) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet-upper) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    margin-right: 69px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-logo {

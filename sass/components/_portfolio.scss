@@ -1,21 +1,40 @@
 // Portfolio
 .portfolio {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-upper) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // @media screen and (min-width: $desctop-upper), (max-width: $desctop-lower) {
+  //   margin: -15px;
+  // }
+}
+
+.portfolio-card:not(:last-child) {
+  @media screen and (max-width: $tablet-lower) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-card {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-  &:nth-child(3n) {
-    margin-right: 0;
+  @media screen and (min-width: $tablet-upper) {
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
   }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+  @media screen and (min-width: $desctop-upper) {
+    width: calc((100% - 60px) / 3);
+    margin: 0 30px 30px 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -36,6 +55,7 @@
 
   .card-img {
     @extend %img;
+    display: inline-block;
   }
 }
 .card-img-description {
@@ -46,9 +66,17 @@
 
   margin-top: 0;
   margin-bottom: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   width: 100%;
   height: 100%;
+
+  @media screen and (min-width: $tablet-upper) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    padding: 63px 24px;
+  }
 
   color: $white-text-color;
   background-color: rgba(33, 150, 243, 0.9);
@@ -79,10 +107,14 @@
   padding-top: 20px;
 
   &-title {
-    color: $secondary-text-color;
-
     margin-top: 0;
     margin-bottom: 4px;
+
+    color: $secondary-text-color;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     font-weight: 700;
     font-size: 18px;

@@ -1,20 +1,38 @@
 // Контейнер 3
 .join {
-  text-align: center;
+  @media screen and (max-width: $desctop-lower) {
+    text-align: center;
+  }
 }
 
 .join-form {
-  // display: flex;
-  // justify-content: center;
+  @media screen and (min-width: $desctop-upper) {
+    display: flex;
+    // justify-content: center;
+  }
+
   &-label {
     display: block;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet-upper) {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: $desctop-upper) {
+      margin-bottom: 0;
+    }
   }
 
   &-input {
     padding: 15px 16px;
     width: 100%;
-    // width: 358px;
+
+    @media screen and (min-width: $desctop-upper) {
+      width: 358px;
+    }
 
     font-size: 16px;
     line-height: 1.25;
@@ -31,8 +49,11 @@
   @extend .submit;
   display: inline-flex;
   align-items: center;
-  // margin-left: 12px;
   padding: 10px 29px;
+
+  @media screen and (min-width: $desctop-upper) {
+    margin-left: 12px;
+  }
 }
 .icon-plane {
   width: 24px;
@@ -45,6 +66,9 @@
   .join-button:hover &,
   .join-button:focus & {
     transform: translatex(70px) scale(1.2);
-    // transform: translate(25px, -50px) scale(1.2);
+
+    @media screen and (min-width: $desctop-upper) {
+      transform: translate(25px, -50px) scale(1.2);
+    }
   }
 }

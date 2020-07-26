@@ -1,11 +1,11 @@
 .site-nav {
   @extend %list;
   display: flex;
-  margin-left: 85px;
+  // margin-left: 85px;
 
-  @media screen and (max-width: $tablet-lower) {
-    display: none;
-  }
+  // @media screen and (max-width: $tablet-lower) {
+  //   display: none;
+  // }
 }
 
 .site-nav-item {

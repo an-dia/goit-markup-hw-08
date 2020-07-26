@@ -6,17 +6,25 @@
   left: 0;
   min-width: 100%;
 
-  // min-height: 80px;
-
   background-color: $primary-bg-color;
 }
 
-@media screen and (min-width: $tablet-upper) {
-  .page-header-nav {
-    display: flex;
-    align-items: center;
+.page-header-nav {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+
+  @media screen and (min-width: $tablet-upper) {
+    min-height: 80px;
   }
 }
+
+// @media screen and (min-width: $tablet-upper) {
+//   .page-header-nav {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
 
 .header-portfolio {
   border-bottom: 1px solid #ececec;

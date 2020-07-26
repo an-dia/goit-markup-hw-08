@@ -2,4 +2,10 @@
   display: flex;
   align-items: center;
   min-height: 60px;
+  margin-left: 81px;
+  // margin-left: 85px;
+
+  @media screen and (max-width: $tablet-lower) {
+    margin-left: auto;
+  }
 }
