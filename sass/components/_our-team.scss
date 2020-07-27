@@ -10,9 +10,9 @@
     margin: -15px;
   }
 
-  @media screen and (min-width: $desctop-upper) {
-    margin: 15px;
-  }
+  // @media screen and (min-width: $desctop-upper) {
+  //   margin: -15px;
+  // }
 }
 
 .team-item {
@@ -38,16 +38,17 @@
   }
 
   @media screen and (min-width: $desctop-upper) {
-    width: calc((100% - 90px) / 4);
-    margin: 0;
-    margin-right: 30px;
+    width: calc((100% - 15px * 8) / 4);
+    margin: 15px;
+    // margin: 0;
+    // margin-right: 30px;
   }
 
-  &:nth-child(4n) {
-    @media screen and (min-width: $desctop-upper) {
-      margin-right: 0;
-    }
-  }
+  // &:nth-child(4n) {
+  //   @media screen and (min-width: $desctop-upper) {
+  //     margin-right: 0;
+  //   }
+  // }
 }
 
 // 122px
