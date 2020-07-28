@@ -4,13 +4,6 @@
   @media screen and (min-width: $tablet-upper) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-  }
-
-  @media screen and (min-width: $desctop-upper) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
   }
 
   &-title {
@@ -23,6 +16,7 @@
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
+
     @media screen and (max-width: $tablet-lower) {
       text-align: center;
     }
@@ -37,21 +31,43 @@
 }
 
 .priority-item {
-  @media screen and (min-width: $tablet-upper) {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-
-  @media screen and (min-width: $desctop-upper) {
-    width: calc((100% - 8 * 15px) / 4);
-    margin: 15px;
-  }
-
   &:not(:last-child) {
     @media screen and (max-width: $tablet-lower) {
       margin-bottom: 30px;
     }
   }
+
+  @media screen and (min-width: $tablet-upper) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  // @media screen and (min-width: $tablet-upper) {
+  //   width: calc((100% - 4 * 15px) / 2);
+  //   margin: 15px;
+  // }
+
+  // @media screen and (min-width: $desctop-upper) {
+  //   width: calc((100% - 8 * 15px) / 4);
+  //   margin: 15px;
+  // }
 }
 
 .priority-icon-conteiner {
@@ -60,16 +76,10 @@
   justify-content: center;
   height: 120px;
 
-  // padding: 25px 190px;
-
   margin-bottom: 30px;
   border-radius: 4px;
 
   background-color: $secondary-bg-color;
-
-  @media screen and (min-width: $tablet-upper) {
-    padding: 25px 142px;
-  }
 
   @media screen and (min-width: $desctop-upper) {
     padding: 25px 100px;

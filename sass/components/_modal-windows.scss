@@ -27,9 +27,8 @@
   // left: 50%;
   // transform: translate(-50%, -50%);
   padding: 40px;
-  // overflow: auto;
-  max-width: 450px;
-  // max-height: 100%;
+  overflow: auto;
+  // max-width: 450px;
 
   background-color: $primary-bg-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -44,8 +43,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 528px;
+    max-width: 450px;
     width: 100%;
+    max-height: 100%;
   }
 
   .backdrop.is-hidden & {
@@ -85,7 +85,7 @@
 
 // Form
 .form {
-  max-width: 448px;
+  // max-width: 448px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -98,11 +98,15 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $secondary-text-color;
+
+  @media screen and (min-width: $desctop-upper) {
+    line-height: 1.15;
+  }
 }
 
 .form-field {
@@ -221,14 +225,16 @@
 }
 
 .icon-check {
+  display: block;
   margin-right: 7px;
   width: 18px;
   height: 18px;
-  /* background-image: url(../images/no-check.svg); */
+  // background-image: url(../images/no-check.svg);
   border-radius: 2px;
   background-color: $primary-bg-color;
   cursor: pointer;
   transition: box-shadow $timing-function-bezier;
+  background-repeat: no-repeat;
 
   .checkbox:focus-within & {
     box-shadow: 0 0 0 2px $accent-color;
@@ -245,13 +251,18 @@
 
 // Policy
 .policy {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $primary-text-color;
 
   &-link {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 
