@@ -23,9 +23,9 @@
 .modal {
   // position: absolute;
   position: relative;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 40px;
   overflow: auto;
   // max-width: 450px;
@@ -36,6 +36,10 @@
   border-radius: 4px;
 
   transition: $timing-function-bezier;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 
   @media screen and (min-width: $mobile-upper) {
     position: absolute;
@@ -48,8 +52,8 @@
     max-height: 100%;
   }
 
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.5);
+  @media screen and (min-width: $desctop-upper) {
+    max-width: 528px;
   }
 }
 
@@ -229,6 +233,7 @@
   margin-right: 7px;
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
   // background-image: url(../images/no-check.svg);
   border-radius: 2px;
   background-color: $primary-bg-color;
