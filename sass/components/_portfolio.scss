@@ -63,9 +63,13 @@
   position: relative;
   overflow: hidden;
 
+  // object-position: center;
+
   .card-img {
     @extend %img;
-    display: inline-block;
+    height: 294px;
+    width: 100%;
+    object-fit: cover;
   }
 }
 .card-img-description {

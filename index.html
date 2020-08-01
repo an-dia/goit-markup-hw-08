@@ -148,33 +148,78 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/growing-business.jpg"
-                alt="ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work1-370.webp,
+                    ./images/work/work1-370@2x.webp 2x,
+                    ./images/work/work1-370@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/work/work1-370.jpg,
+                    ./images/work/work1-370@2x.jpg 2x,
+                    ./images/work/work1-370@3x.jpg 3x
+                  "
+                  class="work-img"
+                  src="./images/work1-370.jpg"
+                  alt="ноутбук"
+                  width="370"
+                  sizes="(min-width:1200px) 33vw"
+                />
+              </picture>
               <a href="" class="work-link">Десктопные приложения</a>
             </li>
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/mobile-applications.jpg"
-                alt="мобильный-телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work2-370.webp,
+                    ./images/work/work2-370@2x.webp 2x,
+                    ./images/work/work2-370@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/work/work2-370.jpg,
+                    ./images/work/work2-370@2x.jpg 2x,
+                    ./images/work/work2-370@3x.jpg 3x
+                  "
+                  class="work-img"
+                  src="./images/work2-370.jpg"
+                  alt="мобильный-телефон"
+                  width="370"
+                  sizes="(min-width:1200px) 33vw"
+                />
+              </picture>
               <a href="" class="work-link">Мобильные приложения</a>
             </li>
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/designer-groves.jpg"
-                alt="экран-компьютера"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work3-370.webp,
+                    ./images/work/work3-370@2x.webp 2x,
+                    ./images/work/work3-370@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/work/work3-370.jpg,
+                    ./images/work/work3-370@2x.jpg 2x,
+                    ./images/work/work3-370@3x.jpg 3x
+                  "
+                  class="work-img"
+                  src="./images/work3-370.jpg"
+                  alt="экран-компьютера"
+                  width="370"
+                  sizes="(min-width:1200px) 33vw"
+                />
+              </picture>
               <a href="" class="work-link">Дизайнерские решения</a>
             </li>
           </ul>
@@ -187,13 +232,71 @@
           <ul class="team">
             <li class="team-item">
               <picture>
-                <source srcset="" />
+                <source
+                  srcset="
+                    ./images/team/team1-450.webp     450w,
+                    ./images/team/team1-450@2x.webp  900w,
+                    ./images/team/team1-450@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-270.webp    270w,
+                    ./images/team/team1-270@2x.webp 540w,
+                    ./images/team/team1-270@3x.webp 810w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-354.webp     354w,
+                    ./images/team/team1-354@2x.webp  708w,
+                    ./images/team/team1-354@3x.webp 1062w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-450.jpg     450w,
+                    ./images/team/team1-450@2x.jpg  900w,
+                    ./images/team/team1-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-270.jpg    270w,
+                    ./images/team/team1-270@2x.jpg 540w,
+                    ./images/team/team1-270@3x.jpg 810w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-354.jpg     354w,
+                    ./images/team/team1-354@2x.jpg  708w,
+                    ./images/team/team1-354@3x.jpg 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+
                 <img
                   class="img"
-                  src="./images/team-1.jpg"
+                  src="./images/team/team1-354.jpg"
                   alt="николай-кучеренко"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="team-content">
@@ -248,13 +351,75 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="img"
-                src="./images/team-2.jpg"
-                alt="ольга-иванова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team2-450.webp     450w,
+                    ./images/team/team2-450@2x.webp  900w,
+                    ./images/team/team2-450@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-270.webp    270w,
+                    ./images/team/team2-270@2x.webp 540w,
+                    ./images/team/team2-270@3x.webp 810w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-354.webp     354w,
+                    ./images/team/team2-354@2x.webp  708w,
+                    ./images/team/team2-354@3x.webp 1062w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-450.jpg     450w,
+                    ./images/team/team2-450@2x.jpg  900w,
+                    ./images/team/team2-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-270.jpg    270w,
+                    ./images/team/team2-270@2x.jpg 540w,
+                    ./images/team/team2-270@3x.jpg 810w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-354.jpg     354w,
+                    ./images/team/team2-354@2x.jpg  708w,
+                    ./images/team/team2-354@3x.jpg 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+
+                <img
+                  class="img"
+                  src="./images/team/team2-354.jpg"
+                  alt="ольга-иванова"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-content-title">Ольга Иванова</h3>
                 <p class="team-content-text" lang="en">Frontend Developer</p>
@@ -307,13 +472,74 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="img"
-                src="./images/team-3.jpg"
-                alt="андрей-шевченко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team3-450.webp     450w,
+                    ./images/team/team3-450@2x.webp  900w,
+                    ./images/team/team3-450@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-270.webp    270w,
+                    ./images/team/team3-270@2x.webp 540w,
+                    ./images/team/team3-270@3x.webp 810w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-354.webp     354w,
+                    ./images/team/team3-354@2x.webp  708w,
+                    ./images/team/team3-354@3x.webp 1062w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-450.jpg     450w,
+                    ./images/team/team3-450@2x.jpg  900w,
+                    ./images/team/team3-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-270.jpg    270w,
+                    ./images/team/team3-270@2x.jpg 540w,
+                    ./images/team/team3-270@3x.jpg 810w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-354.jpg     354w,
+                    ./images/team/team3-354@2x.jpg  708w,
+                    ./images/team/team3-354@3x.jpg 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+
+                <img
+                  class="img"
+                  src="./images/team/team3-354.jpg"
+                  alt="андрей-шевченко"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content-title">Андрей Шевченко</h3>
                 <p class="team-content-text" lang="en">Marketing</p>
@@ -366,13 +592,74 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="img"
-                src="./images/team-4.jpg"
-                alt="иван-николаев"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team4-450.webp     450w,
+                    ./images/team/team4-450@2x.webp  900w,
+                    ./images/team/team4-450@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-270.webp    270w,
+                    ./images/team/team4-270@2x.webp 540w,
+                    ./images/team/team4-270@3x.webp 810w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-354.webp     354w,
+                    ./images/team/team4-354@2x.webp  708w,
+                    ./images/team/team4-354@3x.webp 1062w,
+
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-450.jpg     450w,
+                    ./images/team/team4-450@2x.jpg  900w,
+                    ./images/team/team4-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-270.jpg    270w,
+                    ./images/team/team4-270@2x.jpg 540w,
+                    ./images/team/team4-270@3x.jpg 810w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-354.jpg     354w,
+                    ./images/team/team4-354@2x.jpg  708w,
+                    ./images/team/team4-354@3x.jpg 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+
+                <img
+                  class="img"
+                  src="./images/team/team3-354.jpg"
+                  alt="иван-николаев"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content-title">Иван Николаев</h3>
                 <p class="team-content-text" lang="en">UI Designer</p>

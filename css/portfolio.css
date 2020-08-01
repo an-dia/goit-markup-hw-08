@@ -650,7 +650,10 @@ body.modal-open {
 }
 
 .card-img-conteiner .card-img {
-  display: inline-block;
+  height: 294px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-img-description {
