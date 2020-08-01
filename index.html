@@ -22,7 +22,12 @@
         <a href="./index.html" class="logo" lang="en"
           >Web <span class="logo-primary">Studio</span></a
         >
-        <button type="button" class="menu-button" is-open data-menu-button>
+        <button
+          type="button"
+          class="dropdown-menu"
+          aria-label="Выпадающее меню"
+          data-menu-button
+        >
           <svg
             class="icon"
             width="40"
@@ -891,8 +896,13 @@
       <!-- Modal window -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button data-modal-close class="close-modal" type="button">
-            <svg class="icon-close-modal">
+          <button
+            data-modal-close
+            class="dropdown-close"
+            aria-label="Закрывает модальное окно"
+            type="button"
+          >
+            <svg class="icon-dropdown-close">
               <use href="./images/sprite.svg#icon-close-modal"></use>
             </svg>
           </button>

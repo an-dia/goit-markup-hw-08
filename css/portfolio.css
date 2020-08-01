@@ -63,7 +63,7 @@ body.modal-open {
   }
 }
 
-.menu-button {
+.dropdown-menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -75,7 +75,7 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .dropdown-menu {
     display: none;
   }
 }
@@ -84,21 +84,21 @@ body.modal-open {
   display: none;
 }
 
-.menu-button.is-open .icon-close-md {
+.dropdown-menu.is-open .icon-close-md {
   display: block;
 }
 
-.menu-button:hover .icon-close-md,
-.menu-button:focus .icon-close-md {
+.dropdown-menu:hover .icon-close-md,
+.dropdown-menu:focus .icon-close-md {
   fill: #2196f3;
 }
 
-.menu-button.is-open .icon-burger {
+.dropdown-menu.is-open .icon-burger {
   display: none;
 }
 
-.menu-button:hover .icon-burger,
-.menu-button:focus .icon-burger {
+.dropdown-menu:hover .icon-burger,
+.dropdown-menu:focus .icon-burger {
   fill: #2196f3;
 }
 

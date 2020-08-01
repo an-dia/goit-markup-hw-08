@@ -60,7 +60,7 @@
 }
 
 // Close modal
-.close-modal {
+.dropdown-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -77,14 +77,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.icon-close-modal {
+.icon-dropdown-close {
   width: 18px;
   height: 18px;
 
   transition: $timing-function-bezier;
 
-  .close-modal:hover &,
-  .close-modal:focus & {
+  .dropdown-close:hover &,
+  .dropdown-close:focus & {
     fill: $accent-color;
   }
 }

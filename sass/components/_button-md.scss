@@ -1,4 +1,4 @@
-.menu-button {
+.dropdown-menu {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -9,31 +9,27 @@
   @media screen and (min-width: $tablet-upper) {
     display: none;
   }
-
-  // @media screen and (min-width: $desctop-upper) {
-  //   display: none;
-  // }
 }
 
 .icon-close-md {
   display: none;
 
-  .menu-button.is-open & {
+  .dropdown-menu.is-open & {
     display: block;
   }
 
-  .menu-button:hover &,
-  .menu-button:focus & {
+  .dropdown-menu:hover &,
+  .dropdown-menu:focus & {
     fill: $accent-color;
   }
 }
 
 .icon-burger {
-  .menu-button.is-open & {
+  .dropdown-menu.is-open & {
     display: none;
   }
-  .menu-button:hover &,
-  .menu-button:focus & {
+  .dropdown-menu:hover &,
+  .dropdown-menu:focus & {
     fill: $accent-color;
   }
 }
