@@ -27,7 +27,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  overflow: auto;
+  // overflow: auto;
+  // max-height: 100%;
   // max-width: 450px;
 
   background-color: $primary-bg-color;
@@ -41,7 +42,7 @@
     transform: translate(-50%, -50%) scale(0.5);
   }
 
-  @media screen and (min-width: $mobile-upper) {
+  @media screen and (max-width: $tablet-lower) {
     position: absolute;
 
     top: 50%;
@@ -50,6 +51,7 @@
     max-width: 450px;
     width: 100%;
     max-height: 100%;
+    overflow: auto;
   }
 
   @media screen and (min-width: $desctop-upper) {
