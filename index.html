@@ -25,14 +25,15 @@
         <button
           type="button"
           class="dropdown-menu"
-          aria-label="Выпадающее меню"
+          aria-expanded="false"
+          aria-controls="menu-container"
           data-menu-button
         >
           <svg
             class="icon"
             width="40"
             height="40"
-            aria-label="Переключатель мобильного меню"
+            aria-label="Переключатель мобильного  меню"
           >
             <use
               class="icon-close-md"
@@ -47,15 +48,15 @@
 
         <div class="menu-conteiner" data-menu>
           <nav class="main-nav">
-            <ul class="site-nav">
-              <li class="site-nav-item">
-                <a href="" class="site-nav-link current">Студия</a>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="" class="nav-link current">Студия</a>
               </li>
-              <li class="site-nav-item">
-                <a href="./portfolio.html" class="site-nav-link">Портфолио</a>
+              <li class="nav-item">
+                <a href="./portfolio.html" class="nav-link">Портфолио</a>
               </li>
-              <li class="site-nav-item">
-                <a href="" class="site-nav-link">Контакты</a>
+              <li class="nav-item">
+                <a href="" class="nav-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -87,7 +88,9 @@
           <h1 class="hero-title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button data-modal-open class="submit">Заказать услугу</button>
+          <button type="submit" class="submit" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Приоритет-->
@@ -966,7 +969,11 @@
               </span>
             </label>
             <div class="conteiner-button">
-              <button class="button-modal" type="submit">
+              <button
+                class="button-modal"
+                type="submit"
+                aria-label="Отправляет форму"
+              >
                 Отправить
               </button>
             </div>
